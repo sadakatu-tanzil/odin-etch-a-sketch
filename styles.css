@@ -19,9 +19,25 @@ body {
   padding: 16px 0;
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .header h1 {
   font-weight: 500;
   font-size: 48px;
+}
+
+.reset-button {
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .sketchboard {

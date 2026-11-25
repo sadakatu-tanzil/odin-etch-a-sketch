@@ -1,4 +1,8 @@
 const grid = document.querySelector(".grid");
+const btnReset = document.querySelector(".reset-button");
+btnReset.addEventListener("click", function () {
+  main();
+});
 
 function createCell(size) {
   const cell = document.createElement("span");
@@ -14,6 +18,7 @@ function createCell(size) {
 
 function addCells(amount) {
   grid.replaceChildren();
+
   for (let i = 1; i <= amount ** 2; i++) {
     grid.append(createCell(amount));
   }
@@ -30,9 +35,9 @@ function setDefaultGrid() {
   addCells(10);
 }
 
-setDefaultGrid();
-
 function main() {
+  setDefaultGrid();
+
   const userValue = prompt("Pick a size between 1 and 100");
 
   if (userValue === null) return;
