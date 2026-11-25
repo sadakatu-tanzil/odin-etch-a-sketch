@@ -3,3 +3,45 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #35353f;
+  color: #efefef;
+  padding: 16px 0;
+}
+
+.header h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.sketchboard {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid {
+  width: 500px;
+  height: 500px;
+  background-color: #35353f;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  --side: 100%;
+  border: 1px solid #efefef;
+  width: var(--side);
+  height: var(--side);
+}
