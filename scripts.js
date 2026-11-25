@@ -25,3 +25,29 @@ function getRandomColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r} ${g} ${b})`;
 }
+
+function setDefaultGrid() {
+  addCells(10);
+}
+
+setDefaultGrid();
+
+function main() {
+  const userValue = prompt("Pick a size between 1 and 100");
+
+  if (userValue === null) return;
+
+  if (isNaN(Number(userValue))) {
+    alert("Invalid value");
+    return;
+  }
+
+  if (Number(userValue) < 1 || Number(userValue) > 100) {
+    alert("Invalid size");
+    return;
+  }
+
+  addCells(Number(userValue));
+}
+
+main();
