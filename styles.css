@@ -41,7 +41,10 @@ body {
 
 .cell {
   --side: 100%;
+  --color: transparent;
   border: 1px solid #efefef;
   width: var(--side);
   height: var(--side);
+  background-color: var(--color);
+  transition: 0.2s;
 }
